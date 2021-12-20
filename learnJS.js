@@ -4,7 +4,7 @@ const buttonShowSeconds = document.getElementById('buttonShowSeconds')
 const myInput = document.getElementById('entryField')
 
 
-class MyClass {
+class  MyClass {
     constructor() {
         this.timeout = null
         this.interval = null
