@@ -28,14 +28,13 @@ const usersArray = [
 
 const divideUserByGender = (usersList) => {
     return usersList.reduce((result, user) => {
+
         const {first_name, last_name, ...othersData} = user
+
         const updatedUser = {fullName: `${first_name} ${last_name}`, ...othersData,}
         result[updatedUser.gender] = !result[updatedUser.gender]
             ? [updatedUser]
             : [...result[updatedUser.gender], updatedUser]
         return result
     }, {})
-
 }
-
-console.log(divideUserByGender(usersArray))

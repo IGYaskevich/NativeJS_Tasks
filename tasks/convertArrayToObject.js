@@ -22,4 +22,3 @@ const convertArrayToObject = (videosList) => {
         return result
     }, {})
 }
-console.log(convertArrayToObject(videos))
